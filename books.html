@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        .image-container {
+            background-image: url("images/boks.jpg");
+            background-size: cover;
+            position: relative;
+            height: 300px;
+        }
+        
+        .text {
+            background-color: khaki;
+            color: black;
+            font-size: 3vw;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 10px;
+            width: 20%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: screen;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- topbar -->
+    <div class="topbar" style="background-color:#eccd00 ">
+        <div class="container p-2 ">
+            <div class="row ">
+                <div class="col-6 ">
+
+                    <p> <i class="fa fa-mobile px-2" aria-hidden="true" style="font-size:26px"></i><i class="fa fa-envelope px-2" aria-hidden="true" style="font-size:26px"></i> Welcome to Smart Books</p>
+                </div>
+                <div class="col-6 " style="padding-left: 20%; ">
+                    <div class="social ">
+                        <i class="fa fa-user-circle-o px-2 " id="register " style="font-size:20px">Register</i>
+                        <i class="fa fa-facebook " aria-hidden="true " style="font-size:20px"></i>
+                        <i class="fa fa-twitter px-2 " style="font-size:20px"></i>
+                        <i class="fa fa-instagram px-2 " style="font-size:2opx"></i>
+                        <i class="fa fa-whatsapp px-2 " style="font-size:20px"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+
+        <a class="navbar-brand pl-5" href="#" style="padding-right: 220px;">
+            <img src="file:///D:/bookland/images/loggo.webp " id="logo " class=" ">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link " href="index.html" style="color: #eccd00">Home <span class=" sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="about.html ">About </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Books
+                    </a>
+                    <div class="dropdown-menu bg-dark " aria-labelledby=" navbarDropdownMenuLink ">
+                        <a class="dropdown-item text-white " href="books.html ">Novels</a>
+                        <a class="dropdown-item text-white" href="poetry.html ">Poetry</a>
+                        <a class="dropdown-item  text-white" href="literature.html ">Literature</a>
+                    </div>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="contact-us.html ">Contact us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="who-are-we.html ">Who are we</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="terms-and-conditions.html ">Terms and Conditions</a>
+                    </li>
+            </ul>
+            <i class="fa fa-user-circle-o px-2 " style="color: #eccd00; font-size:26px "></i>
+            <i class="fa fa-shopping-cart " aria-hidden="true " style="color: #eccd00; font-size:26px "></i>
+        </div>
+    </nav>
+
+
+    <div class="image-container">
+        <div class="text">BOOKS</div>
+    </div>
+
+    <!-- Example single danger button -->
+    <nav class="navbar navbar-expand-md navbar-light
+     ">
+
+        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#collapsibleNavbar ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar ">
+
+            <ul class="navbar-nav justify-content-right ">
+                <li class="nav-item  " style="background-color: #363c42 ;font-size: 30px;font-weight: bolder;">
+                    <a class="nav-link text-white " href="books.html ">Novels</a>
+                </li>
+                <li class="nav-item  " style="background-color: #363c42 ;font-size: 30px; font-weight: bolder;">
+                    <a class="nav-link text-white " href="literature.html ">Literature</a>
+                </li>
+                <li class="nav-item  " style="background-color: #363c42 ; font-size: 30px; font-weight: bolder;">
+
+                    <a class=" nav-link text-white " href="poetry.html ">Poetry</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="books ">
+        <div class="heading ">
+            <h1>NOVELS
+            </h1>
+            <hr style="border: 1px solid #eccd00; margin-bottom: 25px; width: 270px;display: inline-block; ">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="new-arrival m-3 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/halim1.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Halim Part 1</h5>
+                            <p class="card-text ">Rs: 1500</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/halim2.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Halim Part 2</h5>
+                            <p class="card-text ">Rs: 1500</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/alif.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">ALIF</h5>
+                            <p class="card-text ">Rs: 1200</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/hawain.jpeg " class="card-img-top " style="height: 175px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Hawain Rukh bdl Gye</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/mushaf.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mushaf</h5>
+                            <p class="card-text ">Rs: 600</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/abdullah.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Abdullah</h5>
+                            <p class="card-text ">Rs: 2000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/namal.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Namal</h5>
+                            <p class="card-text ">Rs: 2000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/peerekamil.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Peer e kamil</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/dashte janun.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Dashte Janun</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/neelam ka markat.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Neelam ka markat</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/sans sakin thi.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">sans Sakin thi</h5>
+                            <p class="card-text ">Rs: 800</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/jkp.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Janat Ke Paty</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/zavia 1.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Zavia part 1</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/zavia Part 2.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Zavia Part2</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/zavia 3.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Zavia part3</h5>
+                            <p class="card-text ">Rs: 800</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/safr dr safr.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Safr dar safr</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/harat kada.jpeg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Herat Kada</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/yaram.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Yaram</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/sharzad.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Shaharzad</h5>
+                            <p class="card-text ">Rs: 800</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="card ">
+                        <img src="images/muhabt ke jugnu.jpg " class="card-img-top " style="height: 200px; ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Muhabat Ke Jgnu</h5>
+                            <p class="card-text ">Rs: 1000</p>
+                            <a href="# " class="btn  ">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer bg-dark text-white ">
+        <div class="container-fluid p-5 ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <h5>ABOUT US</h5>
+                    <hr style="border: 1px solid #eccd00; margin-bottom: 25px; width: 100%;display: inline-block; ">
+                    <p>Smart book is a worldwide textbook rental service created by reader for readers We operate since 2014 and we offer lots of new books</p>
+                    Here we are transformoing young children from reluctant readers into happy book lovers. And we are doing that by introducing them to concept of reading for the pure joy of reading.
+                </div>
+                <div class="col-md-4 ">
+                    <h5>CONTACT INFO
+                    </h5>
+                    <hr style="border: 1px solid #eccd00; margin-bottom: 25px; width: 100%;display: inline-block; ">
+                    <p>We are always available for you</p>
+                    <p><i class="fa fa-building-o px-2 " aria-hidden="true " style="font-size: 29px; "></i>Faisalabad Pakistan</p>
+                    <p><i class="fa fa-phone px-2 " aria-hidden="true " style="font-size: 29px; "></i>+92 12345679
+
+
+                    </p>
+                    <p>
+                        <i class="fa fa-clock-o px-2 " aria-hidden="true " style="font-size: 29px; "></i>Serving 7 Days A Week From 9am-5pm
+                    </p>
+                    <p>
+                        <i class=" fa fa-envelope-o px-2 " aria-hidden="true " style="font-size: 29px; "></i>info@smart-book.com </p>
+                    <i class=" fa fa-facebook-square " aria-hidden="true " style="font-size: 29px; color:#eccd00 "></i>
+                    <i class="fa fa-twitter-square px-2 " style="font-size: 29px; color:#eccd00 "></i>
+                    <i class="fa fa-instagram px-2 " style="font-size: 29px; color:#eccd00 "></i>
+                    <i class="fa fa-whatsapp px-2 " style="font-size: 29px; color:#eccd00 "></i>
+                    <i class="fa fa-google-plus-square px-2 " style="font-size: 29px; color:#eccd00 "></i>
+
+                </div>
+
+                <div class="col-md-2 ">
+                    <h5>USEFUL LINKS</h5>
+                    <hr style="border: 1px solid #eccd00; margin-bottom: 25px; width: 100%;display: inline-block; ">
+                    <ul style="list-style: circle; ">
+                        <li>
+                            <a href="index.html " class="text-white " style="text-decoration: none; "> Home </a></li>
+
+                        <li>
+                            <a href="about.html" class="text-white " style="text-decoration: none; ">About</a> </li>
+
+                        <li>
+                            <a href="contact-us.html" class="text-white " style="text-decoration: none; ">Contact us</a></li>
+                        <li>
+                            <a href="books.html" class="text-white " style="text-decoration: none; ">Books</a>
+                        </li>
+                        <li>
+                            <a href="terms-and-conditions.html" class="text-white " style="text-decoration: none; ">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="return-policy.html" class="text-white " style="text-decoration: none; ">Return policy </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>NEWSLETTER</h5>
+                    <hr style="border: 1px solid #eccd00; margin-bottom: 25px; width: 100%;display: inline-block; ">
+                    <p>Keep up with our always upcoming news, events, and updates. Enter your e-mail and subscribe to our newsletter.</p>
+                    <div class="text-white ">
+                        <form action=" " method="get ">
+
+
+                            <input type="text " placeholder=" Enter your e-mail " name="email " style="border-radius: 20px; height:50px;width:100%; " class="text-white ">
+                            <input type="button " value="Subscribe " class=" p-2 m-2 " style="border-radius: 20px;background-color:#eccd00 ">
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class=" copyright bg-dark text-white ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+
+                    <div class="img px-5 ">
+                        <img src="file:///D:/bookland/images/loggo.webp " id="logo " class=" ">
+                    </div>
+
+                </div>
+
+                <div class="col-md-9 " style="padding-left: 30%; font-size: 20px; padding-top: 5px; ">
+                    <p>
+                        <i class="fa fa-copyright " aria-hidden="true " style="color:#eccd00 " "></i>2020 All Right reserved by Smart books </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+
+
+</html>
